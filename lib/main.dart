@@ -1,13 +1,22 @@
 import 'package:flutter/material.dart';
+import 'Data/DataCollection.dart';
+import 'package:provider/provider.dart';
+import 'screens/HomeScreen.dart';
 
 void main() {
   runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp();
+    return ChangeNotifierProvider<DataCollection>(
+        create: (context) => DataCollection(),
+        child: MaterialApp(
+          initialRoute: HomeScreen.id,
+          routes: {
+            HomeScreen.id: (context) => HomeScreen(),
+          },
+        ));
   }
 }
