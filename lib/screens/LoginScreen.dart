@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:greensnap/screens/HomeScreen.dart';
-import 'package:greensnap/screens/RegistrationScreen.dart';
 
 class LoginScreen extends StatelessWidget {
   static String id = "LoginScreen";
@@ -145,7 +144,7 @@ class LoginScreen extends StatelessWidget {
                         splashColor: Colors.transparent,
                         highlightColor: Colors.transparent,
                         onPressed: () {
-                          Navigator.pushNamed(context, RegistrationCsreen.id);
+                          Navigator.pushNamed(context, HomeScreen.id);
                         },
                         child: Container(
                           width: queryData.size.width * 0.45,

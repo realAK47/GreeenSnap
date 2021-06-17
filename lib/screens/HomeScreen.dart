@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:greensnap/screens/PlanCamScreen.dart';
+import 'package:greensnap/screens/PlantATreeScreen.dart';
 
 class HomeScreen extends StatelessWidget {
   static String id = "HomeScreen";
@@ -50,8 +50,10 @@ class HomeScreen extends StatelessWidget {
                   Expanded(
                     flex: 1,
                     child: FlatButton(
+                      highlightColor: Colors.transparent,
+                      splashColor: Colors.transparent,
                       onPressed: () {
-                        Navigator.pushNamed(context, PlantCamScreen.id);
+                        Navigator.pushNamed(context, PlantATreeScreen.id);
                       },
                       child: Container(
                         decoration: BoxDecoration(
@@ -70,29 +72,15 @@ class HomeScreen extends StatelessWidget {
                                     borderRadius: BorderRadius.circular(10),
                                     color: Color(0xff1A4F5A),
                                   ),
-                                  child: Column(
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.center,
-                                    children: [
-                                      SizedBox(
-                                        height: 20,
+                                  child: Center(
+                                    child: Text(
+                                      "Plant A Tree",
+                                      style: TextStyle(
+                                        color: Color(0xffCEB58C),
+                                        fontSize: 20,
+                                        fontWeight: FontWeight.w900,
                                       ),
-                                      Text(
-                                        "Plant A Tree",
-                                        style: TextStyle(
-                                          color: Color(0xffCEB58C),
-                                          fontSize: 20,
-                                          fontWeight: FontWeight.w900,
-                                        ),
-                                      ),
-                                      Padding(
-                                        padding: const EdgeInsets.all(8.0),
-                                        child: Text(
-                                          "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industr ",
-                                          style: TextStyle(color: Colors.white),
-                                        ),
-                                      ),
-                                    ],
+                                    ),
                                   ),
                                 ),
                               )
@@ -107,49 +95,42 @@ class HomeScreen extends StatelessWidget {
                   ),
                   Expanded(
                     flex: 1,
-                    child: Container(
-                      decoration: BoxDecoration(
-                        color: Color(0xffCFD3CE),
-                        borderRadius: BorderRadius.circular(10),
-                      ),
-                      child: Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: Row(
-                          children: [
-                            Expanded(child: Image.asset("images/donate.png")),
-                            Expanded(
-                              child: Container(
-                                height: querydata.size.height * 0.25,
-                                decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(10),
-                                  color: Color(0xff1A4F5A),
-                                ),
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.center,
-                                  children: [
-                                    SizedBox(
-                                      height: 20,
-                                    ),
-                                    Text(
-                                      "Contribute",
-                                      style: TextStyle(
-                                        color: Color(0xffCEB58C),
-                                        fontSize: 20,
-                                        fontWeight: FontWeight.w900,
-                                      ),
-                                    ),
-                                    Padding(
-                                      padding: const EdgeInsets.all(8.0),
+                    child: FlatButton(
+                      onPressed: () {},
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: Color(0xffCFD3CE),
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                        child: Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Row(
+                            children: [
+                              Expanded(child: Image.asset("images/donate.png")),
+                              Expanded(
+                                child: Container(
+                                  height: querydata.size.height * 0.25,
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(10),
+                                    color: Color(0xff1A4F5A),
+                                  ),
+                                  child: Padding(
+                                    padding: const EdgeInsets.all(10.0),
+                                    child: Center(
                                       child: Text(
-                                        "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the  ",
-                                        style: TextStyle(color: Colors.white),
+                                        "Plant disease detection using ml and Iot",
+                                        style: TextStyle(
+                                          color: Color(0xffCEB58C),
+                                          fontSize: 20,
+                                          fontWeight: FontWeight.w900,
+                                        ),
                                       ),
                                     ),
-                                  ],
+                                  ),
                                 ),
-                              ),
-                            )
-                          ],
+                              )
+                            ],
+                          ),
                         ),
                       ),
                     ),
@@ -159,50 +140,40 @@ class HomeScreen extends StatelessWidget {
                   ),
                   Expanded(
                     flex: 1,
-                    child: Container(
-                      decoration: BoxDecoration(
-                        color: Color(0xffCFD3CE),
-                        borderRadius: BorderRadius.circular(10),
-                      ),
-                      child: Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: Row(
-                          children: [
-                            Expanded(
-                                child: Image.asset("images/menstrual-cup.png")),
-                            Expanded(
-                              child: Container(
-                                height: querydata.size.height * 0.25,
-                                decoration: BoxDecoration(
-                                  borderRadius: BorderRadius.circular(10),
-                                  color: Color(0xff1A4F5A),
-                                ),
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.center,
-                                  children: [
-                                    SizedBox(
-                                      height: 20,
-                                    ),
-                                    Text(
-                                      "Hello Cups!",
+                    child: FlatButton(
+                      onPressed: () {},
+                      child: Container(
+                        decoration: BoxDecoration(
+                          color: Color(0xffCFD3CE),
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                        child: Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Row(
+                            children: [
+                              Expanded(
+                                  child: Image.asset("images/buyorsell.png")),
+                              Expanded(
+                                child: Container(
+                                  height: querydata.size.height * 0.25,
+                                  decoration: BoxDecoration(
+                                    borderRadius: BorderRadius.circular(10),
+                                    color: Color(0xff1A4F5A),
+                                  ),
+                                  child: Center(
+                                    child: Text(
+                                      "Buy / Sell",
                                       style: TextStyle(
                                         color: Color(0xffCEB58C),
                                         fontSize: 20,
                                         fontWeight: FontWeight.w900,
                                       ),
                                     ),
-                                    Padding(
-                                      padding: const EdgeInsets.all(8.0),
-                                      child: Text(
-                                        "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the  ",
-                                        style: TextStyle(color: Colors.white),
-                                      ),
-                                    ),
-                                  ],
+                                  ),
                                 ),
                               ),
-                            ),
-                          ],
+                            ],
+                          ),
                         ),
                       ),
                     ),
