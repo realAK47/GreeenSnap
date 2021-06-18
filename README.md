@@ -17,19 +17,19 @@ GreenSnap is a simple solution to all the above problems. It’s an app which en
 
 Donate Money for a plant - included to address the worries of those who wish to plant more trees but are unable to due to various constraints like time and effort. We also plan to include a feature through which the donor is connected to the person who would be receiving the free plant, which in turn helps to keep a rapport between both the parties.
 
-- Get a Plant
+- #### Get a Plant
 In this we give away seedlings absolutely free for the registered users. The only prerequisite is that they must take good care of what they are provided with, which includes updating the database on their plant’s growth. Hence, we make use of machine learning techniques to assess the photos which ultimately decides on whether a user is eligible to receive free seedlings/plants in the near future.  
 
 We have also enabled a feature through which a user can share their plant’s progress on social media.
 
 
- #### Plant Disease Detection using Internet of Things(IoT) and Machine Learning(ML)
+ - #### Plant Disease Detection using Internet of Things(IoT) and Machine Learning(ML)
 Regular monitoring of plants ensures proper growth and thereby, makes sures that the yield is of good quality. With the help of the new age technologies, this process can be automated which in turn saves time and effort. 
 Here, machine learning is used to detect leaf diseases by matching the image with the most suitable option.
 
 We have also provided the necessary details with which people can get started on IoT kits, that help with the early detection of disease and pest symptoms, which in turn would increase the chances of plant survival.
 
-- Buy/Sell
+- #### Buy/Sell
 This feature is introduced to encourage people to plant more and as a result, get an additional income too. This also reduces post harvest losses. 
 
 ## Results
