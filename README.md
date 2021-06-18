@@ -48,6 +48,7 @@ A new Flutter project.
 
 - ## [Solution Road Map](https://user-images.githubusercontent.com/78870466/122602380-597a7e00-d090-11eb-88bf-3b455c8dfceb.png)
 
-- #### [Our app UI model](https://www.figma.com/proto/381nvyLBOfs9h414cxpLwG/GreenSnap_Hackathon?page-id=0%3A1&node-id=395%3A40&viewport=-2030%2C105%2C0.6753939390182495&scaling=scale-down)
 
-- #### [Demo video](https://youtu.be/-coIcUsSMg8)
+- ## [Demo video](https://youtu.be/-coIcUsSMg8)
+- - #### [Our app UI model](https://www.figma.com/proto/381nvyLBOfs9h414cxpLwG/GreenSnap_Hackathon?page-id=0%3A1&node-id=395%3A40&viewport=-2030%2C105%2C0.6753939390182495&scaling=scale-down)
+
