@@ -1,4 +1,4 @@
-# greensnap
+# GreenSnap
 
 A new Flutter project.
 
