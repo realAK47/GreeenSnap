@@ -46,7 +46,7 @@ Ensures additional income especially during the pandemic.
 The ultimate purpose of this project is to make sure that the Earth is well preserved for the future generations and make known the fact that technology was indeed created so that we could help better our environment and not go against it.
 A new Flutter project.
 
--## [Solution Road Map](https://user-images.githubusercontent.com/78870466/122602380-597a7e00-d090-11eb-88bf-3b455c8dfceb.png)
+- ## [Solution Road Map](https://user-images.githubusercontent.com/78870466/122602380-597a7e00-d090-11eb-88bf-3b455c8dfceb.png)
 
 - #### [Our app UI model](https://www.figma.com/proto/381nvyLBOfs9h414cxpLwG/GreenSnap_Hackathon?page-id=0%3A1&node-id=395%3A40&viewport=-2030%2C105%2C0.6753939390182495&scaling=scale-down)
 
