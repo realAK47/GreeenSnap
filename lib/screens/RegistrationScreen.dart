@@ -1,15 +1,29 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:greensnap/screens/HomeScreen.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_core/firebase_core.dart';
 
 class RegistrationCsreen extends StatefulWidget {
   static String id = "RegistrationScreen";
 
   @override
-  _RegistrationCsreenState createState() => _RegistrationCsreenState();
+  _RegistrationScreenState createState() => _RegistrationScreenState();
 }
-
-class _RegistrationCsreenState extends State<RegistrationCsreen> {
+void initState() {
+  super.initState();
+  Firebase.initializeApp().whenComplete(() {
+    print("completed");
+  }
+      }
+class _RegistrationScreenState extends State<RegistrationCsreen> {
   bool checkBoxValue = false;
+  String email = "null";
+  String password = "null";
+  String confirmpass = "null";
+  final _auth = FirebaseAuth.instance;
+  @override
+
 
   @override
   Widget build(BuildContext context) {
@@ -74,15 +88,18 @@ class _RegistrationCsreenState extends State<RegistrationCsreen> {
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(10)),
                 child: TextField(
+                  onChanged: (value) {
+                    email = value;
+                  },
                   decoration: InputDecoration(
                     border: InputBorder.none,
-                    hintText: "Phone Number",
+                    hintText: "Email address",
                     hintStyle: TextStyle(
                       fontSize: 20,
                       color: Color(0xffbcbcbc),
                     ),
                   ),
-                  keyboardType: TextInputType.number,
+                  keyboardType: TextInputType.emailAddress,
                   textAlign: TextAlign.center,
                   showCursor: false,
                   maxLines: 1,
@@ -101,6 +118,9 @@ class _RegistrationCsreenState extends State<RegistrationCsreen> {
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(10)),
                 child: TextField(
+                  onChanged: (value) {
+                    password = value;
+                  },
                   decoration: InputDecoration(
                     border: InputBorder.none,
                     hintText: "Password",
@@ -129,6 +149,9 @@ class _RegistrationCsreenState extends State<RegistrationCsreen> {
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(10)),
                 child: TextField(
+                  onChanged: (value) {
+                    confirmpass = value;
+                  },
                   obscureText: true,
                   decoration: InputDecoration(
                     border: InputBorder.none,
@@ -224,8 +247,12 @@ class _RegistrationCsreenState extends State<RegistrationCsreen> {
               FlatButton(
                 splashColor: Colors.transparent,
                 highlightColor: Colors.transparent,
-                onPressed: () {
-                  Navigator.pushNamed(context, RegistrationCsreen.id);
+                onPressed: () async {
+                  try {
+                    final newUser = await _auth.createUserWithEmailAndPassword(
+                        email: email, password: password);
+                  }
+                  catch (e)
                 },
                 child: Container(
                   width: queryData.size.width * 0.45,
