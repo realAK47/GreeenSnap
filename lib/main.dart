@@ -9,7 +9,7 @@ import 'package:greensnap/screens/RegistrationScreen.dart';
 import 'Data/DataCollection.dart';
 import 'package:provider/provider.dart';
 import 'screens/HomeScreen.dart';
-import 'package:camera/camera.dart';
+import 'package:firebase_core/firebase_core.dart';
 
 void main() {
   runApp(MyApp());
